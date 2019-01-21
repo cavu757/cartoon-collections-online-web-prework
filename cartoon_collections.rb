@@ -29,7 +29,7 @@ def find_the_cheese(my_input)
       puts "No " + cheese_types[0]
       cheese_types.delete_at(0)
     end
-  "hi"
   end
+  "hi" 
 end
     
