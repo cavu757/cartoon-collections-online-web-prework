@@ -23,7 +23,7 @@ def find_the_cheese(my_input)
   until cheese_types.empty? == true do
     if my_input.include?(cheese_types[0]) == true
       puts "There is " + cheese_types[0]
-      cheese_types.shift
+      return cheese_types.shift
       break
     else
       puts "No " + cheese_types[0]
