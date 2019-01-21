@@ -26,7 +26,8 @@ def find_the_cheese(my_input)
       cheese_types.delete_at(0)      
     else
       puts "There is " + cheese_types[0]
-      cheese_types.shift
+      return cheese_types[0]
+      break
     end
   end
 end
