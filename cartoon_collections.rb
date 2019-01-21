@@ -21,13 +21,13 @@ end
 def find_the_cheese(my_input)
   cheese_types = ["cheddar", "gouda", "camembert", "mozzarella"]
   until cheese_types.empty? == true do
-    if my_input.include?(cheese_types[0]) == true
-      puts "There is " + cheese_types[0]
-      return cheese_types.shift
-      break
-    else
+    if my_input.include?(cheese_types[0]) != true
       puts "No " + cheese_types[0]
-      cheese_types.delete_at(0)
+      cheese_types.delete_at(0)      
+    else
+      puts "There is " + cheese_types[0]
+      cheese_types.shift
+      break
     end
   end
 end
